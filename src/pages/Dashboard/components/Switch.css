@@ -1,0 +1,38 @@
+.switch__container {
+    display: flex;
+    width: 80px;
+    height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 4px;
+    background-color: white;
+    color: var(--nav-item-color);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    flex-direction: row-reverse;
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+}
+
+.switch__toggle {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: var(--nav-item-color);
+    position: absolute;
+    cursor: pointer;
+    right: 52px;
+    transition: all 0.3s ease-in-out;
+}
+
+.switch__container.active {
+    color: var(--primary-color);
+    flex-direction: row;
+}
+
+.switch__container.active .switch__toggle {
+    background-color: var(--primary-color);
+    right: 4px;
+}

@@ -1,0 +1,58 @@
+.cardview {
+    text-align: start;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 200px;
+}
+
+.cardview .title {
+    color: var(--nav-item-color);
+    font-weight: 400;
+    font-size: small;
+}
+
+.cardview .content {
+    font-size: xx-large;
+    font-weight: 500;
+    color: black;
+}
+
+.cardview1 {
+    height: fit-content;
+    cursor: pointer;
+}
+
+.cardview1 > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(98, 98, 98);
+}
+
+.cardview1 .icon {
+    transform: scale(2);
+    transform-origin: top left;
+}
+
+.cardview1 .content {
+    font-size: medium;
+}
+
+.cardview2 {
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    min-height: 120px;
+}
+
+.cardview2 .icon {
+    transform: scale(1.5);
+    transform-origin: top center;
+    color: rgb(98, 98, 98);
+}
+
+.cardview2 .content {
+    font-size: medium;
+    color: var(--nav-item-color);
+}
