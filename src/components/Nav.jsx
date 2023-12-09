@@ -16,7 +16,7 @@ const Nav = () => {
           <span>Home</span>
         </NavLink>
         <NavLink to={"orders"} className="nav__item">
-          { location === "/orders" ? <HiClipboardList /> : <HiOutlineClipboardList /> }
+          { /^\/orders/.test(location) ? <HiClipboardList /> : <HiOutlineClipboardList /> }
           <span>Orders</span>
         </NavLink>
         <NavLink to={"products"} className="nav__item">

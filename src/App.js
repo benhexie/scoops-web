@@ -14,7 +14,10 @@ function App() {
         <Routes>
           <Route path='/' element={<Dashboard />}>
             <Route index element={<Home />} />
-            <Route path='orders' element={<Orders />} />
+            <Route path='orders'>
+              <Route index element={<Orders />} />
+              <Route path=':state' element={<Orders />} />
+            </Route>
             <Route path='products' element={<Products />} />
             <Route path="manage" element={<Manage />} />
             <Route path="account" element={<Account />} />
