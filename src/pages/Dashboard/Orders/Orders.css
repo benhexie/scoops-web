@@ -110,6 +110,7 @@
 
 .share__btn {
     margin-top: auto;
+    margin-bottom: 24px;
     padding: 12px 8px;
     display: flex;
     justify-content: center;
